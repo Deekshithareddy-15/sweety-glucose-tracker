@@ -442,14 +442,19 @@ npm test
 
 ## Screenshots & UI Walkthrough
 
-Screenshots can be saved directly in the `screenshots/` folder. Here is the suggested walkthrough checklist:
+All screenshots are captured directly from the live application and saved in the `screenshots/` directory:
 
-1. **`screenshots/01_login.png`**: Login screen with pastel palette and "Fill Demo Credentials" action.
-2. **`screenshots/02_dashboard_slots.png`**: Dashboard showing the four measurement slots (`Morning (fasting)`, `After breakfast`, `After lunch`, `After dinner`) and daily target progress bar.
-3. **`screenshots/03_log_reading_modal.png`**: Log Reading modal with numeric validation and future date restriction.
-4. **`screenshots/04_reading_history.png`**: Reading History table with date filter and pagination controls.
-5. **`screenshots/05_reports_daily.png`**: Daily report showing Highest, Lowest, Average, and chronological breakdown.
-6. **`screenshots/06_reports_monthly.png`**: Previous month report showing historical progression and trend chart.
+| Filename | Description | Preview |
+|---|---|---|
+| **`01_Login.png`** | Login screen with pastel aesthetic, credentials form, and "Fill Demo Credentials" action. | ![Login](screenshots/01_Login.png) |
+| **`02_Signup.png`** | Registration page with Full Name, Email, Password, and inline validations. | ![Signup](screenshots/02_Signup.png) |
+| **`03_Dashboard.png`** | Main healthcare dashboard with user greeting, date selector, 4 slot cards, target counter, and statistics. | ![Dashboard](screenshots/03_Dashboard.png) |
+| **`04_Add_Reading.png`** | Log Blood Glucose modal with slot picker, numeric glucose input, and date picker restricted to today or earlier. | ![Add Reading](screenshots/04_Add_Reading.png) |
+| **`05_Validation.png`** | Inline validation alert preventing duplicate slot readings (*"You already have an Morning (fasting) reading for this date"*). | ![Validation](screenshots/05_Validation.png) |
+| **`06_Reading_History.png`** | Historical reading log with date filter, pagination controls, and chronological records. | ![Reading History](screenshots/06_Reading_History.png) |
+| **`07_Edit_Delete.png`** | Delete confirmation dialog preventing accidental data removal. | ![Delete Confirmation](screenshots/07_Edit_Delete.png) |
+| **`08_Daily_Report.png`** | Daily Report tab showing Highest, Lowest, Average (rounded to 1 decimal), and slot breakdown for selected date. | ![Daily Report](screenshots/08_Daily_Report.png) |
+| **`09_Monthly_Report.png`** | Previous Month Report tab showing prior calendar month progression with Recharts trend visual. | ![Monthly Report](screenshots/09_Monthly_Report.png) |
 
 ---
 
