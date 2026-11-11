@@ -1,0 +1,23 @@
+{
+  "name": "sweety-glucose-tracker",
+  "version": "1.0.0",
+  "description": "Sweety – Blood Glucose Tracker take-home assignment for Kenpath Junior Full Stack Developer position",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build",
+    "migrate": "npm --prefix server run migrate",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test"
+  },
+  "keywords": [
+    "glucose-tracker",
+    "full-stack",
+    "postgresql",
+    "react",
+    "express"
+  ],
+  "author": "Kenpath Candidate",
+  "license": "ISC"
+}
