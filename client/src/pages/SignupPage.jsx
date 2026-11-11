@@ -42,9 +42,13 @@ const SignupPage = () => {
       await signup(formData.name, formData.email, formData.password);
       navigate('/', { replace: true });
     } catch (err) {
-      setError(
-        err.response?.data?.error || 'Registration failed. Please check your details and try again.'
-      );
+      if (!err.response) {
+        setError('Cannot connect to the backend API. Please make sure the server is running on http://localhost:5000.');
+      } else {
+        setError(
+          err.response?.data?.error || 'Registration failed. Please check your details and try again.'
+        );
+      }
     } finally {
       setIsSubmitting(false);
     }

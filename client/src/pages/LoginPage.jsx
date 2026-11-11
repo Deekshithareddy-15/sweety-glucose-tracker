@@ -36,7 +36,11 @@ const LoginPage = () => {
       await login(formData.email, formData.password);
       navigate(from, { replace: true });
     } catch (err) {
-      setError(err.response?.data?.error || 'Invalid login credentials. Please try again.');
+      if (!err.response) {
+        setError('Cannot connect to the backend API. Please make sure the server is running on http://localhost:5000.');
+      } else {
+        setError(err.response?.data?.error || 'Invalid login credentials. Please try again.');
+      }
     } finally {
       setIsSubmitting(false);
     }

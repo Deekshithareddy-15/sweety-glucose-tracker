@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 pool.query('SELECT NOW()')
   .then(() => {
     console.log('Connected to PostgreSQL successfully.');
-    app.listen(PORT, () => {
+    app.listen(PORT, '0.0.0.0', () => {
       console.log(`Sweety API server listening on http://localhost:${PORT}`);
     });
   })
