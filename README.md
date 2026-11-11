@@ -268,7 +268,7 @@ cd server
 npm install
 ```
 
-Create a `.env` file in `server/.env` based on `server/.env.example`:
+Create a `.env` file in `server/.env` based on `server/.env.example` (use your PostgreSQL port, typically `5432` or `5433`):
 
 ```env
 PORT=5000
