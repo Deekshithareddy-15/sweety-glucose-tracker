@@ -3,7 +3,7 @@ const cors = require('cors');
 const errorHandler = require('./middleware/errorHandler');
 
 const authRoutes = require('./routes/authRoutes');
-// readingRoutes and reportRoutes will be mounted as we build them
+const readingRoutes = require('./routes/readingRoutes');
 
 const app = express();
 
@@ -19,6 +19,7 @@ app.get('/api/health', (req, res) => {
 
 // Mount Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/readings', readingRoutes);
 
 // Fallback 404 handler for unknown routes
 app.use('*', (req, res) => {
